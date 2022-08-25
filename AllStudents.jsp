@@ -1,0 +1,141 @@
+<%-- 
+    Document   : AllStudents
+    Created on : Aug 25, 2022, 6:59:49 PM
+    Author     : hmayw
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="deshboard.css">
+    <link rel="stylesheet" href="studentdashboard.css">
+
+</head>
+<body>
+    <div id="bg">
+        <div id="left">
+           <div id="logo">
+                <div id = "smaldiv">
+                    <img src="logo.jpg" alt="">
+                <!-- h2>AICTE</h2>< -->
+            </div>
+                <h4>Admin <span>Penal</span></h4>
+            </div>
+            <div id="leftHalf">
+                <div id="list">
+                    <div class="details">
+                        <i id="dash" class="ri-dashboard-fill"></i>
+                        <a href="AdminDashboard.jsp"><h5 id="dash" >Home</h5></a>
+                        
+                    </div>
+                    <div class="details">
+                        <i id="dash" class="ri-dashboard-fill"></i>
+                        <a href="UniversityInfo.jsp"><h5 id="dash" >Institute Info</h5></a>
+                    </div>
+                    <div class="details">
+                        <i id="dash" class="ri-dashboard-fill"></i>
+                        <a href="AllStudents.jsp"><h5 id="dash" >Student detail</h5></a>
+                        
+                    </div>
+                    
+                </div>
+                <div id="downList">
+                    <img src="https://ouch-cdn2.icons8.com/i60mWXyYo0NUDg6fCdoCvfC2JLhy2qV4abxwMPXx6hQ/rs:fit:256:256/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNDE5/Lzg3YTNlOTE3LWNl/ZjAtNDg5OC04NDhi/LWE4ODk5ODMwMWZl/ZC5zdmc.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+        <div id="center">
+            <nav>
+                <div id="one">
+                    <i class="ri-search-line"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+                <div id="two">
+                    <i class="ri-notification-2-fill"></i>
+                </div>
+            </nav>
+            <div id="detailList">
+                <h3>Parsnal Information</h3>
+            </div>
+            <div><br>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <td>your name    </td>
+                    </tr>
+                    <tr>
+                        <th>Enrollment No.</th>
+                        <td>your Enrollment   </td>
+                    </tr>
+                    <tr>
+                        <th>Gender</th>
+                        <td>Male</td>
+                    </tr>
+                    <tr>
+                        <th>Father Name</th>
+                        <td>your father name    </td>
+                    </tr>
+                    <tr>
+                        <th>Mother Name</th>
+                        <td>your Mother Name   </td>
+                     </tr>
+                     
+                    <tr>
+                        <th>Contect No.</th>
+                        <td>your contect   </td>
+                    </tr>
+                    <tr>
+                        <th>Email Id</th>
+                        <td>your email id   </td>
+                    </tr>
+                    <tr>
+                        <th>10%</th>
+                        <td>Enter your 10th % </td>
+                    </tr> 
+                    <tr>
+                        <th>12%</th>
+                        <td>Enter your 12th % </td>
+                    </tr> 
+                    <tr>
+                        <th>Degree %</th>
+                        <td>Enter your Degree % </td>
+                    </tr> 
+                    <tr>
+                        <th>Branch</th>
+                        <td>CSE</td>
+                     </tr>  
+                     <tr>
+                        <th>passout year</th>
+                        <td>2022</td>
+                     </tr> 
+                     <tr>
+                        <th>placement Status</th>
+                        <td>placed</td>
+                     </tr> 
+                    <tr>
+                        <th> Currunt Address</th>
+                        <td>your address    </td>
+                     </tr>            
+                </table>
+            </div>
+            <div class="edit"><br>
+                <a href="studentupdate.html"><button>Edit</button></a>
+                <button>Save</button> 
+            </div>
+                <!-- <div id="about">
+                    <a href="#">About US</a>
+                    <a href="#"> Help</a>
+                </div> -->
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
