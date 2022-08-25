@@ -11,6 +11,8 @@ function myfun() {
  function login(){
     var login=document.getElementById("login");
     login.style.display="block"
+    var close_login=document.getElementById("login_c");
+    close_login.style.display="none";
  }
  function login_close(){
     var close_login=document.getElementById("login");
@@ -20,10 +22,29 @@ function myfun() {
     var register=document.getElementById("register");
     register.style.display="block";
  }
- function register_close(){
-    var register_close=document.getElementById("register");
-    register_close.style.display="none";
+ function login_c(){
+    var login_open_c=document.getElementById("login_c");
+    login_open_c.style.display="block";
+    var close_login=document.getElementById("login");
+    close_login.style.display="none";
  }
+ function login_close_c(){
+   var close_login=document.getElementById("login_c");
+   close_login.style.display="none";
+}
+function register_c(){
+   var register_c=document.getElementById("register_c");
+   register_c.style.display="block";
+   var register=document.getElementById("register");
+    register.style.display="none";
+}
+function register_close_c(){
+   var register_c=document.getElementById("register_c");
+   register_c.style.display="none";
+  
+}
+
+
 
  
 
