@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,8 +32,8 @@
         <a href="#">
             <img src="images/aicte logo.jpg"></a>
         <h1>AICTE</h1>
-        <li style="list-style-type:none;">
-            <button  onclick="login()" >Login</button><button onclick="register()">SignUp</button>
+        <li style="list-style-type:none; padding:1% 0">
+            <button class="sbutton" onclick="login()" >Login</button><button onclick="register()" class="sbutton" >SignUp</button>
         </li>
   </label>
 
@@ -93,22 +93,25 @@
 
 
 
-    <!-- Login -->
+
+
+    <!-- Login institute -->
  
 <div class="register "  id="login">
     <form>
         <div class="login">
+   
             <h1 class="close" onclick="login_close()"><abbr title="Click to close">X</abbr></h1>
-            <h1>Login Page</h1>
+            <h1>Institute Login</h1>
             <br><br>
             <fieldset>
                 <legend>Already a Member</legend>
 
                 <br>
 
-                <label>Stud: </label>
+                <label>Institue ID: </label>
                 <input type="text" placeholder="Enter Username" name="username" required>
-                <label>Password : </label>
+                <label>Password: </label>
                 <input type="password" class="password-register" placeholder="Enter Password" name="password" required>
                 <button type="submit" class="registerbtn">Login</button>
                 <div class="registerbtn" onclick="register()" style="text-align:center; background-color:gray">Sineup</div>
@@ -119,7 +122,49 @@
             </fieldset>
         </div>
     </form>
+    <button class="sbutton" onclick="login_c()" >Company Login</button>
 </div>
+
+
+
+
+
+
+
+
+<!-- Company login -->
+
+<div class="register "  id="login_c">
+    <form>
+        <div class="login">
+            <h1 class="close" onclick="login_close_c()"><abbr title="Click to close">X</abbr></h1>
+            <h1>Company Login</h1>
+            <br><br>
+            <fieldset>
+                <legend>Already a Member</legend>
+
+                <br>
+
+                <label>Company ID: </label>
+                <input type="text" placeholder="Enter Username" name="username" required>
+                <label>Password: </label>
+                <input type="password" class="password-register" placeholder="Enter Password" name="password" required>
+                <button type="submit" class="registerbtn">Login</button>
+                <div class="registerbtn" onclick="register_c()" style="text-align:center; background-color:gray">Sineup</div>
+                <br>
+                <input type="checkbox"> Remember me
+
+                <span style="float:right; padding:1px;"> Forgot <a href="#"> password? </a></span>
+            </fieldset>
+        </div>
+    </form>
+    <button class="sbutton" onclick="login()" >Institute Login</button>
+</div>
+
+
+
+
+
 
 
     <!--Register-->
@@ -127,69 +172,32 @@
         <form>
 
             <h1 class="close" onclick="register_close()"><abbr title="Click to close">X</abbr></h1>
-            <h1>Registeration Page</h1>
+            <h1>Institute Registration </h1>
             <br>
             <br>
-            <label> ID</label>
-            <input type="text" name="studentid" placeholder="Enter Erollment Number"  required>
+            <label>Institute ID</label>
+            <input type="text" name="instituteid" placeholder="Enter Erollment Number"  required>
             
-            <label>Name</label>
-            <input type="text" name="universityid" placeholder="Enter University ID"  required>
+            <label>Institute Name</label>
+            <input type="text" name="institutename" placeholder="Enter University ID"  required>
 
-           
+         
             
-            <input type="text" name="fathername" placeholder="Enter your Father Name" size="15"  required />
-            <label> Mother Name: </label>
-            <input type="text" name="mothername" placeholder="Enter your Mother Name" size="15"  required />
-            <div>
-                <label>
-                    Course :
-                </label>
-
-                <select>
-                    <option value="Course">Course</option>
-                    <option value="BCA">BCA</option>
-                    <option value="BBA">BBA</option>
-                    <option value="B.Tech">B.Tech</option>
-                    <option value="MBA">MBA</option>
-                    <option value="MCA">MCA</option>
-                    <option value="M.Tech">M.Tech</option>
-                </select>
-            </div>
-            <div>
-                <label>
-                    <br>
-                    Gender :
-                </label><br>
-                <input type="radio" value="Male" name="gender" checked> Male
-                <input type="radio" value="Female" name="gender"> Female
-                <input type="radio" value="Other" name="gender"> Other
-
-            </div>
-            <label>
                 <br>
-                Phone :
+                Mobile No. :
                 <div style="display:flex; ">
             </label>
             <input style="display: inline-block ; border:2px solid gray; width:70px; margin-right:2px;" type="text"
                 name="country code" placeholder="Country Code" value="+91" size="2" />
             <input type="text" name="phone" placeholder="phone no." size="10"  required>
     </div>
-    Current Address :
+    Address :
     <textarea cols="80" rows="5" placeholder="Current Address"  required>
               </textarea>
     <label for="email">Email:</label>
     <input type="text" placeholder="Enter Email ID" name="email"  required>
 
-    <label>High School Percentage (in %):</label>
-    <input type="number" min="0" max="2" step="00.001" placeholder="Enter your 10th percentage" name="10th"  required>
 
-    <label>Higher Secondary percentage (in %):</label>
-    <input type="number"  min="0" max="2" step="00.001" placeholder="Enter 12th Percentage" name="12th"  required>
-
-<label for="">Admission Date</label>
-<input type="date" name="addmission date">
-<label for="">Graduation Marks (in %)</label>
 <input type="number"  min="0" max="1" step="0.001" placeholder="Enter Graduation Percentage" name="Graduation"  required>
     <label for="psw">Password</label>
     <input type="password" class="password-register" placeholder="Enter Password" name="psw"  required>
@@ -199,28 +207,65 @@
     <button type="submit" class="registerbtn" value="register" >Register</button>
 
     </form>
+    <button class="sbutton" onclick="register_c()" >Company Register</button>
+    
     </div>
 
 
 
 
 
+<!-- /Company signup -->
+
+<div class="register" id="register_c">
+    <form>
+
+        <h1 class="close" onclick="register_close_c()"><abbr title="Click to close">X</abbr></h1>
+        <h1>Company Registration </h1>
+        <br>
+        <br>
+        <label>Company ID</label>
+        <input type="text" name="instituteid" placeholder="Enter Erollment Number"  required>
+        
+        <label>Company Name</label>
+        <input type="text" name="institutename" placeholder="Enter University ID"  required>
+
+     
+        
+            <br>
+            mobile No. :
+            <div style="display:flex; ">
+        </label>
+        <input style="display: inline-block ; border:2px solid gray; width:70px; margin-right:2px;" type="text"
+            name="country code" placeholder="Country Code" value="+91" size="2" />
+        <input type="text" name="phone" placeholder="phone no." size="10"  required>
+</div>
+Address :
+<textarea cols="80" rows="5" placeholder="Current Address"  required>
+          </textarea>
+<label for="email">Email:</label>
+<input type="text" placeholder="Enter Email ID" name="email"  required>
 
 
- <!--Notices-->
-    <div class="notice" id="notice">
-        <h3>Notice</h2>
-        <p>All India Council for Technical Education (AICTE) was sett up in November 1945 as a national-level Apex
-            Advisory Body to conduct a survey on the facilities available for technical education and to promote
-            development in the country in a coordinated and integrated manner</p>
+<input type="number"  min="0" max="1" step="0.001" placeholder="Enter Graduation Percentage" name="Graduation"  required>
+<label for="psw">Password</label>
+<input type="password" class="password-register" placeholder="Enter Password" name="psw"  required>
 
-        <div class="notices">
-            <div class="notice-board"></div>
-            <br><br><br>
-            <div class="notice-board"></div>
-        </div>
+<label for="psw-repeat">Re-type Password</label>
+<input type="password" class="password-register" placeholder="Retype Password" name="psw-repeat"s  required>
+<button type="submit" class="registerbtn" value="register" >Register</button>
 
-    </div>
+</form>
+<button class="sbutton" onclick="register_c()" >Institute Register</button>
+
+</div>
+
+
+
+
+
+
+
 
 
 
@@ -309,13 +354,3 @@
 
 </html>
 
-id
-name
-city 
-state 
-postal code
-=======
-<h1>
-    Hello
-</h1>
->>>>>>> 7d0f7db158036c17c04da62bfdcb26578711565b

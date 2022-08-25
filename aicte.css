@@ -48,6 +48,10 @@ position:relative;
     font-size:40px;
 }
 
+.sbutton{
+    padding:2px 2px;
+    margin:0 2px;
+}
 
 .menu ul {
 
@@ -308,23 +312,8 @@ legend {
     padding:7px; 
     color:white;
 }
-.notices{
-    padding:7% 5% ;  display:flex; justify-content: space-between; box-sizing: border-box;
-}
-.notice {
-    flex-basis: 31%;
-    background: #fff3f3;
-    padding: 20px 12px;
-    box-sizing: border-box;
-    opacity: 0.6;
-
-}
 
 
-
-.notice:hover {
-    opacity: 0.8;
-}
 
 h1 {
     font-size: 36px;
@@ -373,21 +362,8 @@ h3 {
 
 }
 
-.notice-board {
 
-    border: 3px solid black;
-    display: inline;
-    padding: 27% 23%;
-    border-radius: 10px;
-    background-color: #da6868;
-    opacity: 0.5;
 
-}
-
-.notice-board:hover {
-    opacity: 1px;
-    box-shadow: 0 0 20px 0px gray;
-}
 
 
 .companies {
@@ -510,11 +486,7 @@ h3 {
 .copico{
 color:white;
 }
-.signup {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-}
+
 
 
 
