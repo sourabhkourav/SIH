@@ -43,6 +43,18 @@ function register_close_c(){
    register_c.style.display="none";
   
 }
+function register(){
+   var register_c=document.getElementById("register");
+   register_c.style.display="block";
+   var register=document.getElementById("register_c");
+    register.style.display="none";
+}
+function register_close(){
+   var register_c=document.getElementById("register");
+   register_c.style.display="none";
+   
+}
+
 
 
 

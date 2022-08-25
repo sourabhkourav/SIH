@@ -112,7 +112,7 @@
                 <label>Password: </label>
                 <input type="password" class="password-register" placeholder="Enter Password" name="password" required>
                 <button type="submit" class="registerbtn">Login</button>
-                <div class="registerbtn" onclick="register()" style="text-align:center; background-color:gray">Sineup</div>
+                <div class="registerbtn" onclick="register()" style="text-align:center; background-color:gray">Signup</div>
                 <br>
                 <input type="checkbox"> Remember me
 
@@ -150,7 +150,7 @@
                 <label>Password: </label>
                 <input type="password" class="password-register" placeholder="Enter Password" name="password" required>
                 <button type="submit" class="registerbtn">Login</button>
-                <div class="registerbtn" onclick="register_c()" style="text-align:center; background-color:gray">Sineup</div>
+                <div class="registerbtn" onclick="register_c()" style="text-align:center; background-color:gray">Signup</div>
                 <br>
                 <input type="checkbox"> Remember me
 
@@ -188,8 +188,9 @@
                 Mobile No. :
                 <div style="display:flex; ">
             </label>
+           
             <input style="display: inline-block ; border:2px solid gray; width:70px; margin-right:2px;" type="text"
-                name="country code" placeholder="Country Code" value="+91" size="2" />
+                name="country code" placeholder="Country Code" value="+91" size="2" readonly />
             <input type="text" name="phone" placeholder="phone no." size="10"  required>
     </div>
     Address :
@@ -198,8 +199,8 @@
     <label for="email">Email:</label>
     <input type="text" placeholder="Enter Email ID" name="email"  required>
 
-
-<input type="number"  min="0" max="1" step="0.001" placeholder="Enter Graduation Percentage" name="Graduation"  required>
+    <label for="">Graduation Percentage:</label>
+<input type="number"  min="1"  step="0.001" placeholder="Enter Graduation Percentage" name="Graduation"  required>
     <label for="psw">Password</label>
     <input type="password" class="password-register" placeholder="Enter Password" name="psw"  required>
 
@@ -218,7 +219,7 @@
 <!-- /Company signup -->
 
 <div class="register" id="register_c">
-    <button class="sbutton" onclick="register_c()" >Institute Register</button>
+    <button class="sbutton" onclick="register()" >Institute Register</button>
 
     <form>
 
