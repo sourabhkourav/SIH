@@ -495,7 +495,7 @@ color:white;
     padding: 50px;  
   background-color:white;
   box-shadow:  0 0 20px 0px rgba(0, 0, 0, 0.9);
-  position:absolute;
+  //position:absolute;
   z-index: 1;
   top:100px;
   margin:10%;
