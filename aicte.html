@@ -1,2 +1,321 @@
-<!-- <h1>Hello</h1> -->
-uhi
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aicte.css">
+    <script src="aicte.js"></script>
+
+    <title>AICTE</title>
+
+</head>
+<body>
+
+<!--News Section-->
+<div class="news">
+    <p>News</p>
+    <div>
+        <marquee>•All Institutions are requested to complete Registration & Assessments without fail.
+            •Implementation of PARAKH has been made mandatory for every Institute (Engineering, MBA & MCA
+            Institutions) as per the Norms for Essential Requirements of the Technical Institutions mentioned in
+            Approval Process Handbook 2022-23(APPENDIX-6, 6.1/42) •AICTE PARAKH Portal is OPEN for Registration and
+            Assessments •AICTE SLA (PARAKH) is not an Examination, its a friendly assessment pattern </marquee>
+    </div>
+</div>
+
+<!--This is header-->
+
+    <header class="header">
+        <a href="#">
+            <img src="images/aicte logo.jpg"></a>
+        <h1>AICTE</h1>
+        <li style="list-style-type:none;">
+            <button  onclick="login()" >Login</button><button onclick="register()">SignUp</button>
+        </li>
+  </label>
+
+        <div id="mee" class="mee" onclick="myfun()">
+            <div class="mee1"></div>
+            <div class="mee2"></div>
+            <div class="mee3"></div>
+        </div>
+
+    </header>
+
+
+
+
+<!--This is menu-->
+    <menu class="menu" id="menu">
+
+        <ul>
+
+
+            <li><a href="/aicte.html">
+                    Home
+                </a></li>
+
+            <li> <a href="about.html">
+                    About Us
+                </a></li>
+
+            <li><a href="privacypolicy.html">
+                    Privacy Policy
+                </a></li>
+
+            <li><a href="desclaimer.html">
+                    Disclaimer
+                </a></li>
+
+            <li><a href="#notice">
+                    Notices
+                </a></li>
+            <li><a href="fag.html">
+                    FAQ
+                </a></li>
+            <li><a href="contactus.html">
+                    Contact Us
+                </a></li>
+            <li><a href="tandc.html">
+                    Terms and Condition
+                </a></li>
+            
+                   
+        </ul>
+        
+
+    </menu>
+
+
+
+
+
+    <!-- Login -->
+ 
+<div class="register "  id="login">
+    <form>
+        <div class="login">
+            <h1 class="close" onclick="login_close()"><abbr title="Click to close">X</abbr></h1>
+            <h1>Login Page</h1>
+            <br><br>
+            <fieldset>
+                <legend>Already a Member</legend>
+
+                <br>
+
+                <label>Stud: </label>
+                <input type="text" placeholder="Enter Username" name="username" required>
+                <label>Password : </label>
+                <input type="password" class="password-register" placeholder="Enter Password" name="password" required>
+                <button type="submit" class="registerbtn">Login</button>
+                <div class="registerbtn" onclick="register()" style="text-align:center; background-color:gray">Sineup</div>
+                <br>
+                <input type="checkbox"> Remember me
+
+                <span style="float:right; padding:1px;"> Forgot <a href="#"> password? </a></span>
+            </fieldset>
+        </div>
+    </form>
+</div>
+
+
+    <!--Register-->
+    <div class="register" id="register">
+        <form>
+
+            <h1 class="close" onclick="register_close()"><abbr title="Click to close">X</abbr></h1>
+            <h1>Registeration Page</h1>
+            <br>
+            <br>
+            <label> ID</label>
+            <input type="text" name="studentid" placeholder="Enter Erollment Number"  required>
+            
+            <label>Name</label>
+            <input type="text" name="universityid" placeholder="Enter University ID"  required>
+
+           
+            
+            <input type="text" name="fathername" placeholder="Enter your Father Name" size="15"  required />
+            <label> Mother Name: </label>
+            <input type="text" name="mothername" placeholder="Enter your Mother Name" size="15"  required />
+            <div>
+                <label>
+                    Course :
+                </label>
+
+                <select>
+                    <option value="Course">Course</option>
+                    <option value="BCA">BCA</option>
+                    <option value="BBA">BBA</option>
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="MBA">MBA</option>
+                    <option value="MCA">MCA</option>
+                    <option value="M.Tech">M.Tech</option>
+                </select>
+            </div>
+            <div>
+                <label>
+                    <br>
+                    Gender :
+                </label><br>
+                <input type="radio" value="Male" name="gender" checked> Male
+                <input type="radio" value="Female" name="gender"> Female
+                <input type="radio" value="Other" name="gender"> Other
+
+            </div>
+            <label>
+                <br>
+                Phone :
+                <div style="display:flex; ">
+            </label>
+            <input style="display: inline-block ; border:2px solid gray; width:70px; margin-right:2px;" type="text"
+                name="country code" placeholder="Country Code" value="+91" size="2" />
+            <input type="text" name="phone" placeholder="phone no." size="10"  required>
+    </div>
+    Current Address :
+    <textarea cols="80" rows="5" placeholder="Current Address"  required>
+              </textarea>
+    <label for="email">Email:</label>
+    <input type="text" placeholder="Enter Email ID" name="email"  required>
+
+    <label>High School Percentage (in %):</label>
+    <input type="number" min="0" max="2" step="00.001" placeholder="Enter your 10th percentage" name="10th"  required>
+
+    <label>Higher Secondary percentage (in %):</label>
+    <input type="number"  min="0" max="2" step="00.001" placeholder="Enter 12th Percentage" name="12th"  required>
+
+<label for="">Admission Date</label>
+<input type="date" name="addmission date">
+<label for="">Graduation Marks (in %)</label>
+<input type="number"  min="0" max="1" step="0.001" placeholder="Enter Graduation Percentage" name="Graduation"  required>
+    <label for="psw">Password</label>
+    <input type="password" class="password-register" placeholder="Enter Password" name="psw"  required>
+
+    <label for="psw-repeat">Re-type Password</label>
+    <input type="password" class="password-register" placeholder="Retype Password" name="psw-repeat"s  required>
+    <button type="submit" class="registerbtn" value="register" >Register</button>
+
+    </form>
+    </div>
+
+
+
+
+
+
+
+ <!--Notices-->
+    <div class="notice" id="notice">
+        <h3>Notice</h2>
+        <p>All India Council for Technical Education (AICTE) was sett up in November 1945 as a national-level Apex
+            Advisory Body to conduct a survey on the facilities available for technical education and to promote
+            development in the country in a coordinated and integrated manner</p>
+
+        <div class="notices">
+            <div class="notice-board"></div>
+            <br><br><br>
+            <div class="notice-board"></div>
+        </div>
+
+    </div>
+
+
+
+    <!--Company-->
+
+    <div class="companies">
+
+        <div class="c">
+            <p>All India Council for Technical Education (AICTE)
+                was sett up in November 1945 as a national-level Apex</p>
+
+            <button>Visit Company</button>
+            <h2>Techg</h2>
+        </div>
+        <div class="c">
+            <p>All India Council for Technical Education (AICTE) was sett up in November 1945 as a national-level Apex
+            </p><button>Visit Company</button>
+            <h2>TCSskdj</h2>
+        </div>
+        <div class="c">
+            <p>All India Council for Technical Education (AICTE) was sett up in November 1945 as a national-level Apex
+            </p><button>Visit Company</button>
+            <h2>Hexaware</h2>
+        </div>
+        <div class="c">
+            <p>All India Council for Technical Education (AICTE) was sett up in November 1945 as a national-level Apex
+            </p><button>Visit Company</button>
+            <h2>Capegemini</h2>
+        </div>
+        <div class="c">
+            <p>All India Council for Technical Education (AICTE) was sett up in November 1945 as a national-level Apex
+            </p><button>Visit Company</button>
+            <h2>Cognizent</h2>
+        </div>
+        <div class="c">
+            <p>All India Council for Technical Education (AICTE) was sett up in November 1945 as a national-level Apex
+            </p><button>Visit Company</button>
+            <h2>Amazone</h2>
+        </div>
+        <div class="c">
+            <p>All India Council for Technical Education (AICTE) was sett up in November 1945 as a national-level Apex
+            </p><button>Visit Company</button>
+            <h2>Flipkart</h2>
+        </div>
+        <div class="c">
+            <p>All India Council for Technical Education (AICTE) was sett up in November 1945 as a national-level Apex
+            </p><button>Visit Company</button>
+            <h2>Google</h2>
+        </div>
+    </div>
+
+    
+<br><br>
+
+<!--AICTE Poster-->
+    <div class="poster">
+        <img src="images/aicte_banner.jpg">
+    </div>
+
+
+
+<!--About AICTE-->
+    <section id="au">
+
+        <h2>About AICTE</h2><br>
+        <p>All India Council for Technical Education (AICTE) was sett up in November 1945 as a national-level Apex
+            Advisory Body to conduct a survey on the facilities available for technical education and to promote
+            development in the country in a coordinated and integrated manner. </p>
+    </section>
+
+
+<!--footer-->
+    <div id="myfoot">
+
+    </div>
+
+    <footer class="f">
+        <p id="copico">Created By Heroic Abhiyanta</p>
+
+    </footer>
+
+
+
+
+</body>
+
+</html>
+
+id
+name
+city 
+state 
+postal code
+=======
+<h1>
+    Hello
+</h1>
+>>>>>>> 7d0f7db158036c17c04da62bfdcb26578711565b
